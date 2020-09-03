@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import { Col, Button, Row, Container } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import { Spinner } from 'react-bootstrap';
 import axios from 'axios';
 
 class ModalComic extends Component {
@@ -65,7 +66,7 @@ class ModalComic extends Component {
               <div className='image'>
                 <img src={response.image.original_url} alt={response.name}/>
               </div>
-            </div>: null}
+            </div> : <div className="spinner_modal"><Spinner className='spinner' animation="border" variant="dark" /></div>}
           </Modal.Body>
         </Modal>
       </div>
