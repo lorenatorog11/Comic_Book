@@ -11,7 +11,7 @@ class App extends Component {
     super()
     this.state = {
       urlBase: 'https://cors-anywhere.herokuapp.com/https://comicvine.gamespot.com/api/issues/',
-      apiKey: '?api_key=0b5f5a6a19d3f534d4ef75a04add4654813306ad&format=json&limit=1',
+      apiKey: '?api_key=0b5f5a6a19d3f534d4ef75a04add4654813306ad&format=json',
       response: [],
       error: '',
       display: 'list',
